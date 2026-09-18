@@ -1,5 +1,7 @@
 # Vanguard Safety Companion
 
+![Vanguard Safety Companion Banner](./coverpic.png)
+
 Vanguard is a professional, aesthetic, and interactive late-night journey safety companion application. Designed with modern web practices, it offers a visually stunning glassmorphism interface and robust features to simulate personal security workflows for high-risk transits.
 
 ## Core Features
