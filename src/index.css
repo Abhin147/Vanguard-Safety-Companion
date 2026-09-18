@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-white: #ffffff;
+  --color-bg: #f8f9fa;
+  --color-text-main: #1a1a1a;
+  --color-text-muted: #666666;
+  
+  --color-yellow: #f5c518;
+  --color-yellow-hover: #e0b315;
+  --color-yellow-light: rgba(245, 197, 24, 0.15);
+  
+  --color-olive: #5c7148;
+  --color-olive-hover: #4e603d;
+  --color-olive-light: rgba(92, 113, 72, 0.15);
+  
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --shadow-subtle: 0 4px 30px rgba(0, 0, 0, 0.05);
+  --shadow-strong: 0 10px 40px rgba(0, 0, 0, 0.08);
+  
+  --border-radius-sm: 8px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 24px;
+  --border-radius-full: 9999px;
+  
+  --transition-smooth: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--color-bg);
+  background-image: 
+    radial-gradient(at 0% 0%, var(--color-yellow-light) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, var(--color-olive-light) 0px, transparent 50%);
+  background-attachment: fixed;
+  color: var(--color-text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-text-main);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* Base Utility Classes */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-subtle);
+  border-radius: var(--border-radius-lg);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.btn-primary {
+  background-color: var(--color-yellow);
+  color: var(--color-text-main);
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: var(--border-radius-full);
+  transition: var(--transition-smooth);
+  box-shadow: 0 4px 14px rgba(245, 197, 24, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-yellow-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(245, 197, 24, 0.4);
+}
+
+.btn-secondary {
+  background-color: var(--color-white);
+  color: var(--color-olive);
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: var(--border-radius-full);
+  border: 1px solid var(--color-olive-light);
+  transition: var(--transition-smooth);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-olive);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(92, 113, 72, 0.2);
+}
+
+.btn-sos {
+  background-color: var(--color-text-main);
+  color: var(--color-white);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 16px 36px;
+  border-radius: var(--border-radius-full);
+  transition: var(--transition-smooth);
+}
+
+.btn-sos:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(26, 26, 26, 0.2);
+}
+
+html { scroll-behavior: smooth; }
+
