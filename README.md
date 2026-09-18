@@ -1,4 +1,4 @@
-# Vanguard Safety Companion
+# Vanguard Safety Companion(Team ORION)
 
 ![Vanguard Safety Companion Banner](./coverpic.png)
 
