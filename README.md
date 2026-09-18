@@ -43,5 +43,11 @@ To run Vanguard locally on your machine:
 3. **Interact**: 
    Open `http://localhost:5173/` in your browser. Click **Get Started**, define a custom username, input your route nodes natively into the dashboard, and engage tracking!
 
+
+## Team Members
+
+- **Adwaith S A**
+- **Abhin J Gomez**
+
 ## License
 This project is licensed under the MIT License.
